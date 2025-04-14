@@ -1345,11 +1345,10 @@ elements.chicken_nugget = {
 
 
 
-
 //adding pork
 elements.barbecued_pork.cutInto = ["pulled_pork"];
 elements.raw_pork = {
-    color: ["#e56932", "#c0714e"],
+    color: ["#BF7970", "#BB7177"],
     behavior: behaviors.STURDYPOWDER,
     category: "food",
     state: "solid",
@@ -1368,7 +1367,7 @@ elements.raw_pork = {
         "fire": {elem1: "barbecued_pork"}
  };
 elements.barbecued_pork = {
-    color: ["#c17c20", "#ebad2b", "#f7b846"],
+    color: ["#4E201A", "#712E26", "#603415"],
     behavior: behaviors.STURDYPOWDER,
     category: "food",
     state: "solid",
@@ -1378,7 +1377,7 @@ elements.barbecued_pork = {
     hidden: true,
 };
 elements.pulled_pork = {
-    color: ["#c17c20", "#ebad2b", "#f7b846"],
+    color: ["#4E201A", "#712E26", "#603415"],
     behavior: behaviors.POWDER,
     category: "food",
     state: "solid",
@@ -1388,7 +1387,7 @@ elements.pulled_pork = {
     hidden: true,
 };
 elements.boiled_pork = {
-    color: ["#c17c20", "#ebad2b", "#f7b846"],
+    color: "#6D4624",
     behavior: behaviors.STURDYPOWDER,
     category: "food",
     state: "solid",
@@ -1396,9 +1395,9 @@ elements.boiled_pork = {
     tempHigh: 600,
     stateHigh: ["ash", "smoke"],
     hidden: true,
-};
+}
 elements.smoked_porkchop = {
-    color: ["#c17c20", "#ebad2b", "#f7b846"],
+    color: "#462D17",
     behavior: behaviors.STURDYPOWDER,
     category: "food",
     state: "solid",
@@ -1406,9 +1405,9 @@ elements.smoked_porkchop = {
     tempHigh: 600,
     stateHigh: ["ash", "smoke"],
     hidden: true,
-};
+}
 elements.steamed_porkchop = {
-    color: ["#c17c20", "#ebad2b", "#f7b846"],
+    color: ["#D5D2AA","#B6B492"],
     behavior: behaviors.STURDYPOWDER,
     category: "food",
     state: "solid",
@@ -1416,9 +1415,9 @@ elements.steamed_porkchop = {
     tempHigh: 600,
     stateHigh: ["ash", "smoke"],
     hidden: true,
-};
+}
 elements.cooked_pork = {
-    color: ["#c17c20", "#ebad2b", "#f7b846"],
+    color: ["#603415", "#712E26"],
     behavior: behaviors.STURDYPOWDER,
     category: "food",
     state: "solid",
@@ -1429,7 +1428,7 @@ elements.cooked_pork = {
 };
 
 elements.frozen_pork = {
-    color: ["#e56932", "#c0714e"],
+    color: ["#24697A", "#1B8C9D"],
     behavior: behaviors.STURDYPOWDER,
     category: "food",
     state: "solid",
@@ -1446,7 +1445,7 @@ elements.frozen_pork = {
 //adding beef
 elements.raw_beef.cutInto = ["raw_ground_beef"];
 elements.raw_beef = {
-    color: ["#e56932", "#c0714e"],
+    color: ["#AA4D55", "#995755"],
     behavior: behaviors.STURDYPOWDER,
     category: "food",
     state: "solid",
@@ -1459,7 +1458,7 @@ elements.raw_beef = {
     hidden: true,
 }
 elements.raw_ground_beef = {
-    color: ["#e56932", "#c0714e"],
+    color: ["#AA4D55", "#995755"],
     behavior: behaviors.STURDYPOWDER,
     category: "food",
     state: "solid",
@@ -1472,7 +1471,7 @@ elements.raw_ground_beef = {
     hidden: true,
 }
 elements.steak = {
-    color: ["#c17c20", "#ebad2b", "#f7b846"],
+    color: "#603415",
     behavior: behaviors.STURDYPOWDER,
     category: "food",
     state: "solid",
@@ -1483,7 +1482,7 @@ elements.steak = {
 };
 
 elements.cooked_ground_beef = {
-    color: ["#c17c20", "#ebad2b", "#f7b846"],
+    color: "#603415",
     behavior: behaviors.STURDYPOWDER,
     category: "food",
     state: "solid",
@@ -1493,7 +1492,7 @@ elements.cooked_ground_beef = {
     hidden: true,
 };
 elements.frozen_ground_beef = {
-    color: ["#e56932", "#c0714e"],
+    color: ["#24697A", "#1B8C9D"],
     behavior: behaviors.STURDYPOWDER,
     category: "food",
     state: "solid",
@@ -1504,7 +1503,7 @@ elements.frozen_ground_beef = {
     hidden: true,
 };
 elements.frozen_beef = {
-    color: ["#e56932", "#c0714e"],
+    color: ["#24697A", "#1B8C9D"],
     behavior: behaviors.STURDYPOWDER,
     category: "food",
     state: "solid",
@@ -1529,7 +1528,7 @@ elements.cooking_oil.reactions.potato = { "elem1":null, "elem2":"fried_potato" }
 elements.cooking_oil.reactions.peeled_potato = { "elem1":null, "elem2":"fried_potato" }
 elements.cooking_oil.reactions.potato_skin = { "elem1":null, "elem2":"fried_potato_skin" }
 elements.potato_skin = {
-    color: ["#DC8A5A", "#A86C36", "#DC9A59", "#A76B35"],
+    color: "#DC8A5A",
     behavior: behaviors.POWDER,
     category: "food",
     state: "solid",
@@ -1542,7 +1541,7 @@ elements.potato_skin = {
 }
 
 elements.peeled_potato = {
-    color: ["#D6C39F", "#D1C09D", "#D1C09D", "#CDBF9E"],
+    color: "#FFF9AA",
     behavior: behaviors.STURDYPOWDER,
     category: "food",
     state: "solid",
@@ -1558,7 +1557,7 @@ elements.peeled_potato = {
     }
 }
 elements.fried_potato_skin = {
-    color: ["#DD7908", "#D57206", "#CA6801", "#D68001"],
+    color: ["#DF9940", "#DBAE49", "#DBAE49"],
     behavior: behaviors.POWDER,
     category: "food",
     state: "solid",
@@ -1571,7 +1570,7 @@ elements.fried_potato_skin = {
 }
 
 elements.fried_potato = {
-    color: ["#DD7908", "#D57206", "#CA6801", "#D68001"],
+    color: ["#DF9940", "#DBAE49", "#DBAE49"],
     behavior: behaviors.STURDYPOWDER,
     category: "food",
     state: "solid",
@@ -1588,7 +1587,7 @@ elements.fried_potato = {
 
 //adding veggies
 elements.olive = {
-    color: ["#6e8b3d","#7c9d45"],
+    color: "#668300",
     behavior: behaviors.POWDER,
     reactions: {
         "vinegar": { elem1:"dead_plant", elem2:null, chance:0.035 },
@@ -1609,7 +1608,7 @@ elements.olive = {
     isFood: true,
 }
 elements.carrot = {
-    color: "#e39919",
+    color: "#FF8E00",
     behavior: behaviors.STURDYPOWDER,
     category:"food",
     tempHigh: 100,
@@ -1625,7 +1624,7 @@ elements.carrot = {
 }
 
 elements.carrot_juice = {
-    color: "#f5a742",
+    color: "#FF8E00",
     behavior: behaviors.LIQUID,
     category: "liquids",
     tempHigh: 100,
@@ -1645,7 +1644,7 @@ elements.corn.breakInto ="corn_starch"
 
 
 elements.broccoli = {
-    color: ["#49a82f","#429929"],
+    color: ["#558B00","#80D100"],
     behavior: [
         "XX|XX|XX",
         "XX|XX|XX",
@@ -1670,7 +1669,7 @@ elements.broccoli = {
     cutInto: "cut_broccoli",
 }
 elements.broccoli_stem = {
-    color: ["#51c431","#45ba25"],
+    color: "#80D100",
     behavior: behaviors.STURDYPOWDER,
     reactions: {
         "vinegar": { elem1:"dead_plant", elem2:null, chance:0.035 },
@@ -1691,7 +1690,7 @@ elements.broccoli_stem = {
 }
 
 elements.cut_broccoli = {
-    color: "#75d65a",
+    color: "#80D100",
     behavior: behaviors.POWDER,
     category:"food",
     tempHigh: 100,
@@ -1704,7 +1703,7 @@ elements.cut_broccoli = {
     hidden: true,
 }
 elements.onion = {
-    color: "#731066",
+    color: "#803364#731066",
     behavior: behaviors.STURDYPOWDER,
     category:"food",
     tempHigh: 100,
@@ -1719,7 +1718,7 @@ elements.onion = {
     cutIntoEmit: "stench",
 }
 elements.cut_onion = {
-    color: "#dcc5ed",
+    color: "#B385A2",
     behavior: behaviors.STURDYPOWDER,
     category:"food",
     tempHigh: 100,
@@ -1734,7 +1733,7 @@ elements.cut_onion = {
     reactions:{ "cooking_oil": {elem1:"fried_onion", tempMin: 70, chance:10}}
 }
 elements.fried_onion = {
-    color: "#cf9344",
+    color: ["#DF9940", "#DBAE49", "#DBAE49"],
     behavior: behaviors.POWDER,
     category:"food",
     tempHigh: 500,
@@ -1760,7 +1759,7 @@ elements.blueberry = {
     behavior: behaviors.POWDER,
     category: "food",
     state: "solid",
-    color: ["#464196","#2E2B64"],
+    color: ["#002F72","#005F95"],
     breakInto: "blueberry_juice",
     cutInto: ["cut_blueberry"],
     reactions: {},
@@ -1769,13 +1768,13 @@ elements.cut_blueberry = {
     behavior: behaviors.POWDER,
     category: "food",
     state: "solid",
-    color: ["#464196","#2E2B64"],
+    color: "#80E480",
     breakInto: "blueberry_juice",
     breakIntoColor: "#1F1C42",
     reactions: {},
 }
 elements.blueberry_juice = {
-    color: "#ffb326",
+    color: "#002F72",
     behavior: behaviors.LIQUID,
     category: "liquids",
     tempHigh: 100,
@@ -1793,13 +1792,13 @@ elements.strawberry = {
     behavior: behaviors.POWDER,
     category: "food",
     state: "solid",
-    color: ["#464196","#2E2B64"],
+    color: "#FF0039",
     breakInto: "strawberry_juice",
     breakIntoColor: "#1F1C42",
     reactions: {},
 };
 elements.strawberry_juice = {
-    color: "#ffb326",
+    color: "#FF0039",
     behavior: behaviors.LIQUID,
     category: "liquids",
     tempHigh: 100,
@@ -1817,13 +1816,13 @@ elements.raspberry = {
     behavior: behaviors.POWDER,
     category: "food",
     state: "solid",
-    color: ["#FF0000","#FFCCCC"],
+    color: ["#BF1256","#FF0056"],
     breakInto: "raspberry_juice",
     breakIntoColor: "#FF0000",
     reactions: {},
 };
 elements.raspberry_juice = {
-    color: "#ffb326",
+    color: "#BF1256",
     behavior: behaviors.LIQUID,
     category: "liquids",
     tempHigh: 100,
@@ -1841,13 +1840,13 @@ elements.blackberry = {
     behavior: behaviors.POWDER,
     category: "food",
     state: "solid",
-    color: ["#000000","#660066"],
+    color: "#201240",
     breakInto: "blackberry_juice",
     breakIntoColor: "#660066",
     reactions: {},
 };
 elements.blackberry_juice = {
-    color: "#ffb326",
+    color: "#201240",
     behavior: behaviors.LIQUID,
     category: "liquids",
     tempHigh: 100,
@@ -1865,13 +1864,13 @@ elements.cranberry = {
     behavior: behaviors.POWDER,
     category: "food",
     state: "solid",
-    color: ["#FF0000","#FF6600"],
+    color: "#D50C39",
     breakInto: "cranberry_juice",
     breakIntoColor: "#FF0000",
     reactions: {},
 };
 elements.cranberry_juice = {
-    color: "#ffb326",
+    color: "#D50C39",
     behavior: behaviors.LIQUID,
     category: "liquids",
     tempHigh: 100,
@@ -1896,7 +1895,7 @@ elements.sugar.reactions.blackberry_juice = { "elem1":null, "elem2":"blackberry_
 elements.sugar.reactions.blueberry_juice = { "elem1":null, "elem2":"blueberry_jam" }
 elements.sugar.reactions.strawberry_juice = { "elem1":null, "elem2":"strawberry_jam" }
 elements.raspberry_jam = {
-    color: "#fc9a38",
+    color: "#9F092B",
     behavior: behaviors.LIQUID,
     category: "food",
     tempHigh: 400,
@@ -1909,7 +1908,7 @@ elements.raspberry_jam = {
     hidden: true
 };
 elements.blackberry_jam = {
-    color: "#fc9a38",
+    color: "#501235",
     behavior: behaviors.LIQUID,
     category: "food",
     tempHigh: 400,
@@ -1922,7 +1921,7 @@ elements.blackberry_jam = {
     hidden: true
 };
 elements.strawberry_jam = {
-    color: "#fc9a38",
+    color: "#BF1256",
     behavior: behaviors.LIQUID,
     category: "food",
     tempHigh: 400,
@@ -1935,7 +1934,7 @@ elements.strawberry_jam = {
     hidden: true
 };
 elements.blueberry_jam = {
-    color: "#fc9a38",
+    color: "#201240",
     behavior: behaviors.LIQUID,
     category: "food",
     tempHigh: 400,
@@ -1948,7 +1947,7 @@ elements.blueberry_jam = {
     hidden: true
 };
 elements.marmalade = {
-    color: "#fc9a38",
+    color: "#CC5F00",
     behavior: behaviors.LIQUID,
     category: "food",
     tempHigh: 400,
@@ -1964,7 +1963,7 @@ elements.marmalade = {
 
 //orange
 elements.orange = {
-    color: ["#eda137","#e39230","#d1882e"],
+    color: "#FF7700",
     behavior: behaviors.POWDER,
     reactions: {
         "vinegar": { elem1:"dead_plant", elem2:null, chance:0.035 },
@@ -1986,7 +1985,7 @@ elements.orange = {
     freezeDryIntoColor: "#cf9f40",
 }
 elements.orange_peels = {
-    color: "#f5b133",
+    color: "#FF9E00",
     behavior: behaviors.POWDER,
     category:"food",
     tempHigh: 100,
@@ -2004,7 +2003,7 @@ elements.orange_peels = {
 }
 
 elements.orange_slice = {
-    color: "#f5b133",
+    color: "#FF8E00",
     behavior: behaviors.STURDYPOWDER,
     category:"food",
     tempHigh: 100,
@@ -2021,7 +2020,7 @@ elements.orange_slice = {
     },
 }
 elements.orange_juice = {
-    color: "#ffb326",
+    color: "#FF7700",
     behavior: behaviors.LIQUID,
     category: "liquids",
     tempHigh: 100,
@@ -2039,7 +2038,7 @@ elements.orange_juice = {
 
 //lemon
 elements.lemon = {
-    color: ["#eda137","#e39230","#d1882e"],
+    color: "#FFED00",
     behavior: behaviors.POWDER,
     reactions: {
         "vinegar": { elem1:"dead_plant", elem2:null, chance:0.035 },
@@ -2061,7 +2060,7 @@ elements.lemon = {
     freezeDryIntoColor: "#cf9f40",
 }
 elements.lemon_zest = {
-    color: "#f5b133",
+    color: "#DFCF00",
     behavior: behaviors.POWDER,
     category:"food",
     tempHigh: 100,
@@ -2078,7 +2077,7 @@ elements.lemon_zest = {
 }
 
 elements.lemon_slice = {
-    color: "#f5b133",
+    color: "#FFF24D",
     behavior: behaviors.STURDYPOWDER,
     reactions: {
         "dirt": { elem1: null, elem2: "mud" },
@@ -2105,7 +2104,7 @@ elements.lemon_slice = {
     },
 }
 elements.lemonade = {
-    color: "#ffb326",
+    color: "#FFF24D",
     behavior: behaviors.LIQUID,
     category: "liquids",
     tempHigh: 100,
@@ -2120,7 +2119,7 @@ elements.lemonade = {
     tempLow: 0
 }
 elements.lemon_juice = {
-    color: "#ffb326",
+    color: "#FFED00",
     behavior: behaviors.LIQUID,
     category: "liquids",
     tempHigh: 100,
@@ -2313,7 +2312,7 @@ elements.wine = {
     tempLow: 0
 }
 elements.latte = {
-    color: ["#6F0013", "#6D0112"],
+    color: ["#DBA661", "#9F7455"],
     behavior: behaviors.LIQUID,
     category: "liquids",
     state: "liquid",
@@ -2328,7 +2327,7 @@ elements.latte = {
 
 //milk and icecream
 elements.strawberry_milk = {
-    color: ["#6F0013", "#6D0112"],
+    color: "#FFAAC7",
     behavior: behaviors.LIQUID,
     category: "liquids",
     state: "liquid",
@@ -2341,7 +2340,7 @@ elements.strawberry_milk = {
     stateLow: "strawberry_ice_cream",
 }
 elements.strawberry_ice_cream = {
-    color: ["#6F0013", "#6D0112"],
+    color: "#FFAAC7",
     behavior: behaviors.STURDYPOWDER
     category: "food",
     state: "liquid",
@@ -2352,7 +2351,7 @@ elements.strawberry_ice_cream = {
     hidden: true,
 }
 elements.blueberry_milk = {
-    color: ["#6F0013", "#6D0112"],
+    color: "#AA9CBD",
     behavior: behaviors.LIQUID,
     category: "liquids",
     state: "liquid",
@@ -2365,7 +2364,7 @@ elements.blueberry_milk = {
     stateLow: "blueberry_ice_cream",
 }
 elements.blueberry_ice_cream = {
-    color: ["#6F0013", "#6D0112"],
+    color: "#AA9CBD",
     behavior: behaviors.STURDYPOWDER
     category: "food",
     state: "liquid",
@@ -2376,7 +2375,7 @@ elements.blueberry_ice_cream = {
     hidden: true,
 }
 elements.raspberry_milk = {
-    color: ["#6F0013", "#6D0112"],
+    color: "#FF558E", 
     behavior: behaviors.LIQUID,
     category: "liquids",
     state: "liquid",
@@ -2389,7 +2388,7 @@ elements.raspberry_milk = {
     stateLow: "raspberry_ice_cream",
 }
 elements.raspberry_ice_cream = {
-    color: ["#6F0013", "#6D0112"],
+    color: "#FF558E", 
     behavior: behaviors.STURDYPOWDER
     category: "food",
     state: "liquid",
@@ -2400,7 +2399,7 @@ elements.raspberry_ice_cream = {
     hidden: true,
 }
 elements.blackberry_milk = {
-    color: ["#6F0013", "#6D0112"],
+    color: "#B385A2",
     behavior: behaviors.LIQUID,
     category: "liquids",
     state: "liquid",
@@ -2413,7 +2412,7 @@ elements.blackberry_milk = {
     stateLow: "blackberry_ice_cream",
 }
 elements.blackberry_ice_cream = {
-    color: ["#6F0013", "#6D0112"],
+    color: "#B385A2",
     behavior: behaviors.STURDYPOWDER
     category: "food",
     state: "liquid",
