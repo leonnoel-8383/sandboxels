@@ -668,6 +668,99 @@ elements.frozen_chicken_nugget = {
     density: 100,
     hidden: true,
 };
+elements.barbecued_pork.cutInto = ["pulled_pork"];
+elements.raw_pork = {
+    color: ["#BF7970", "#BB7177"],
+    behavior: behaviors.STURDYPOWDER,
+    category: "food",
+    state: "solid",
+    temp: 20,
+    tempHigh: 90,
+    stateHigh: ["cooked_pork"],
+    tempLow: -2,
+    stateLow: "frozen_pork",
+    isFood: true,
+    hidden: true,
+  reactions: {
+        "smoke": {elem1: "smoked_porkchop"},
+        "steam": {elem1: "steamed_porkchop"},
+        "water": {elem1: "boiled_pork", tempMin: 70},
+        "charcoal": {elem1: "barbecued_pork", tempMin: 70},
+        "fire": {elem1: "barbecued_pork"}
+ };
+elements.barbecued_pork = {
+    color: ["#4E201A", "#712E26", "#603415"],
+    behavior: behaviors.STURDYPOWDER,
+    category: "food",
+    state: "solid",
+    temp: 70,
+    tempHigh: 600,
+    stateHigh: ["ash", "smoke"],
+    hidden: true,
+};
+elements.pulled_pork = {
+    color: ["#4E201A", "#712E26", "#603415"],
+    behavior: behaviors.POWDER,
+    category: "food",
+    state: "solid",
+    temp: 70,
+    tempHigh: 600,
+    stateHigh: ["ash", "smoke"],
+    hidden: true,
+};
+elements.boiled_pork = {
+    color: "#6D4624",
+    behavior: behaviors.STURDYPOWDER,
+    category: "food",
+    state: "solid",
+    temp: 70,
+    tempHigh: 600,
+    stateHigh: ["ash", "smoke"],
+    hidden: true,
+}
+elements.smoked_porkchop = {
+    color: "#462D17",
+    behavior: behaviors.STURDYPOWDER,
+    category: "food",
+    state: "solid",
+    temp: 70,
+    tempHigh: 600,
+    stateHigh: ["ash", "smoke"],
+    hidden: true,
+}
+elements.steamed_porkchop = {
+    color: ["#D5D2AA","#B6B492"],
+    behavior: behaviors.STURDYPOWDER,
+    category: "food",
+    state: "solid",
+    temp: 70,
+    tempHigh: 600,
+    stateHigh: ["ash", "smoke"],
+    hidden: true,
+}
+elements.cooked_pork = {
+    color: ["#603415", "#712E26"],
+    behavior: behaviors.STURDYPOWDER,
+    category: "food",
+    state: "solid",
+    temp: 70,
+    tempHigh: 600,
+    stateHigh: ["ash", "smoke"],
+    hidden: true,
+};
+
+elements.frozen_pork = {
+    color: ["#24697A", "#1B8C9D"],
+    behavior: behaviors.STURDYPOWDER,
+    category: "food",
+    state: "solid",
+    temp: -4,
+    tempHigh: 20,
+    stateHigh: ["raw_chicken"],
+    isFood: true,
+    hidden: true,
+};
+
 
 elements.olive_wood = {
     color: "#632e1f",
@@ -3062,7 +3155,7 @@ elements.strawberry_juice = {
     tempLow: 0,
     reactions: {
         "sugar": { elem1:"strawberry_jam", elem2:null, chance:0.35 },
-        "milk": { elem1:"fruit_milk", elem2:null, chance:0.35, color1:"#f78888"},
+        "milk": { elem1:"strawberry_milk", elem2:null, chance:0.35, color1:"#f78888"},
     },
 };
 eLists.JUICEMIXABLE.push("strawberry_juice");
@@ -3099,6 +3192,181 @@ elements.whipped_cream = {
     state: "liquid",
     density: 959.97,
     viscosity: 2500000
+}
+elements.sugar.reactions.raspberry_juice = { "elem1":null, "elem2":"raspberry_jam" }
+elements.sugar.reactions.blackberry_juice = { "elem1":null, "elem2":"blackberry_jam" }
+elements.sugar.reactions.blueberry_juice = { "elem1":null, "elem2":"blueberry_jam" }
+elements.sugar.reactions.strawberry_juice = { "elem1":null, "elem2":"strawberry_jam" }
+elements.raspberry_jam = {
+    color: "#9F092B",
+    behavior: behaviors.LIQUID,
+    category: "food",
+    tempHigh: 400,
+    stateHigh: ["sugar","smoke"],
+    burn: 70,
+    burnTime: 300,
+    viscosity: 750,
+    state: "liquid",
+    density: 825,
+    hidden: true
+};
+elements.blackberry_jam = {
+    color: "#501235",
+    behavior: behaviors.LIQUID,
+    category: "food",
+    tempHigh: 400,
+    stateHigh: ["sugar","smoke"],
+    burn: 70,
+    burnTime: 300,
+    viscosity: 750,
+    state: "liquid",
+    density: 825,
+    hidden: true
+};
+elements.cranberry = {
+    behavior: behaviors.POWDER,
+    category: "food",
+    state: "solid",
+    color: "#D50C39",
+    breakInto: "cranberry_juice",
+    breakIntoColor: "#FF0000",
+    reactions: {},
+};
+elements.cranberry_juice = {
+    color: "#D50C39",
+    behavior: behaviors.LIQUID,
+    category: "liquids",
+    tempHigh: 100,
+    stateHigh: ["steam","sugar"],
+    burn: 70,
+    burnTime: 300,
+    burnInto: ["steam", "smoke"],
+    state: "liquid",
+    density: 825,
+    hidden: true,
+    temp: 30,
+    tempLow: 0
+}
+
+elements.blackberry = {
+    behavior: behaviors.POWDER,
+    category: "food",
+    state: "solid",
+    color: "#201240",
+    breakInto: "blackberry_juice",
+    breakIntoColor: "#660066",
+    reactions: {},
+};
+elements.blackberry_juice = {
+    color: "#201240",
+    behavior: behaviors.LIQUID,
+    category: "liquids",
+    tempHigh: 100,
+    stateHigh: ["steam","sugar"],
+    burn: 70,
+    burnTime: 300,
+    burnInto: ["steam", "smoke"],
+    state: "liquid",
+    density: 825,
+    hidden: true,
+    temp: 30,
+    tempLow: 0
+}
+elements.strawberry_milk = {
+    color: "#FFAAC7",
+    behavior: behaviors.LIQUID,
+    category: "liquids",
+    state: "liquid",
+    tempHigh: 100,
+    stateHigh: "steam",
+    isFood: true,
+    density: 1000,
+    hidden: true,
+    tempLow: -18,
+    stateLow: "strawberry_ice_cream",
+}
+elements.strawberry_ice_cream = {
+    color: "#FFAAC7",
+    behavior: behaviors.STURDYPOWDER
+    category: "food",
+    state: "liquid",
+    tempHigh: 20,
+    stateHigh: "cream",
+    isFood: true,
+    density: 1095,
+    hidden: true,
+}
+elements.blueberry_milk = {
+    color: "#AA9CBD",
+    behavior: behaviors.LIQUID,
+    category: "liquids",
+    state: "liquid",
+    tempHigh: 100,
+    stateHigh: "steam",
+    isFood: true,
+    density: 1000,
+    hidden: true,
+    tempLow: -18,
+    stateLow: "blueberry_ice_cream",
+}
+elements.blueberry_ice_cream = {
+    color: "#AA9CBD",
+    behavior: behaviors.STURDYPOWDER
+    category: "food",
+    state: "liquid",
+    tempHigh: 20,
+    stateHigh: "cream",
+    isFood: true,
+    density: 1095,
+    hidden: true,
+}
+elements.raspberry_milk = {
+    color: "#FF558E", 
+    behavior: behaviors.LIQUID,
+    category: "liquids",
+    state: "liquid",
+    tempHigh: 100,
+    stateHigh: "steam",
+    isFood: true,
+    density: 1000,
+    hidden: true,
+    tempLow: -18,
+    stateLow: "raspberry_ice_cream",
+}
+elements.raspberry_ice_cream = {
+    color: "#FF558E", 
+    behavior: behaviors.STURDYPOWDER
+    category: "food",
+    state: "liquid",
+    tempHigh: 20,
+    stateHigh: "cream",
+    isFood: true,
+    density: 1095,
+    hidden: true,
+}
+elements.blackberry_milk = {
+    color: "#B385A2",
+    behavior: behaviors.LIQUID,
+    category: "liquids",
+    state: "liquid",
+    tempHigh: 100,
+    stateHigh: "steam",
+    isFood: true,
+    density: 1000,
+    hidden: true,
+       tempLow: -18,
+    stateLow: "blackberry_ice_cream",
+}
+elements.blackberry_ice_cream = {
+    color: "#B385A2",
+    behavior: behaviors.STURDYPOWDER
+    category: "food",
+    state: "liquid",
+    tempHigh: 20,
+    stateHigh: "cream",
+    isFood: true,
+    density: 1095,
+    hidden: true,
 }
 
 elements.ginger = {
@@ -3449,7 +3717,7 @@ elements.blueberry_juice = {
     tempLow: 0,
     reactions: {
         "sugar": { elem1:"blueberry_jam", elem2:null, chance:0.35 },
-        "milk": { elem1:"fruit_milk", elem2:null, chance:0.35, color1: "#995fb3" },
+        "milk": { elem1:"blueberry_milk", elem2:null, chance:0.35, color1: "#995fb3" },
     },
 };
 
